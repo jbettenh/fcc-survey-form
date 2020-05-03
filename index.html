@@ -2,6 +2,120 @@
 <h1 id="title">Life after Coronavirus Lockdown</h1>
 <p id="description">What will you continue doing after the restrictions are lifted?</p>
 <form id="survey-form">
-   <input type="text" placeholder="your name">
-   <input type="email" placeholder="your email">
+  <div class="form-group">
+  <label id="name-label" for="name">Name</label>
+  <input 
+         type="text" 
+         name="name" 
+         id="name" 
+         class="form-control" 
+         placeholder="your name" 
+         required
+  />
+  </div>
+  <div class="form-group">
+  <label id="email-label" for="email">Email</label>
+  <input 
+         type="email"
+         name="email"
+         id="email"
+         class="form-control"
+         placeholder="your email"
+         required
+   />
+  </div>
+  <div class="form-group">
+  <label id="number-label" for="number">Age (Optional)</label>
+  <input 
+         type="number"
+         name="age"
+         id="number"
+         class="form-conrtol"
+         placeholder="your age"
+         min="12"
+         max="120"
+   />
+  </div>
+  
+  <div class="form-group">
+    <p>What situation best desribes your year so far?</p>
+    <select id="dropdown" name="situation" class="form-control" required>
+      <option disabled selected value>select situation</option>
+      <option value="az">Working</option>
+      <option value="mo">Working from home</option>
+      <option value="og">Furloughed without pay</option>
+      <option value="ka">Furloughed with pay</option>
+    </select>
+  </div>
+  
+   <div class="form-group">
+    <p>What new hobbies have you started or picked up again?</p>
+    <label>
+      <input 
+             name="hobbies"
+             value="baking"
+             type="checkbox"
+             class="input-checkbox"
+      />Baking</label>
+    <label>
+      <input 
+             name="hobbies"
+             value="programming"
+             type="checkbox"
+             class="input-checkbox"
+      />Programming</label>
+    <label>
+      <input 
+             name="hobbies"
+             value="exercising"
+             type="checkbox"
+             class="input-checkbox"
+      />Exercising</label>
+    <label>
+      <input
+            name="hobbies"
+            value="music"
+            type="checkbox"
+            class="input-checkbox"
+      />Musical Instrument</label>
+  </div>
+  
+  
+  <div class="form-group">
+    <p>How likely are you to continue these hobbies?</p>
+    <label>
+      <input 
+            name="likeliehood"
+            value="-1"
+            type="radio" 
+            class="input-radio"
+      />Not likely</label>
+    <lable>
+      <input
+             name="likeliehood"
+             value="0"
+             type="radio"
+             class="input-radio"
+             />Somewhat likely</label>
+    <label>  
+      <input 
+             name="likeliehood"
+             value="1"
+             type="radio" 
+             class="input-radio"
+             />Very likely</label>
+  </div>
+  
+ 
+  <div class="form-group">
+    <textarea 
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="your comments here.."
+    ></textarea>
+  </div>
+  
+  <button type="submit" id="submit">Submit</button>
+  
 </form>
