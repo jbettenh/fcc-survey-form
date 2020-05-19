@@ -5,6 +5,10 @@ body {
   line-height: 1.5;
   color: #F3F3F3;
   margin: 0;
+  background-image: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center
 }
 
 h1 {
@@ -48,6 +52,18 @@ button {
   margin: 3.125rem auto 0 auto;
 }
 
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }  
+}
+
+@media (min-width: 768px) {
+  .container {
+   max-width: 720px; 
+  }
+}
+
 .header {
   padding: 0 0.625rem;
    margin-bottom: 1.875rem;
@@ -57,6 +73,12 @@ button {
   font-style: italic;
   font-weight: 200;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.clue {
+  margin-left: 0.25rem;
+  font-size: 0.9rem;
+  color: #E4E4E4;
 }
 
 .text-center {
